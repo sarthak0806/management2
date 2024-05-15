@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Bar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+  /* CSS styling for the navigation bar */
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <!-- first part-->
+    <div class="logo"></div>
+    <!-- second part-->
+    <a href="#" class="fee-section">Fee Section</a>
+    <!-- third part-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto"; class="login-btn">Login</button>
+        
+        <div id="id01" class="modal">
+          
+          <form class="modal-content animate" action="/action_page.php" method="post">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+        
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+                
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+        
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        </button>
+  </div>
+  <!-- image section-->
+  <div class="image_section">
+    <h1 class="image_section_heading">POWERFULL SCHOOL<span> MANEGEMANT </span></h1>
+    <img src="responsive.png" alt="image" class="image">
+  </div>
+  <!-- main section-->
+<section class="Main">
+<div class = "cards">
+<div class="sub_cards"></div>
+<div class="sub_cards"></div>
+<div class="sub_cards"></div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="icon_section">
+        <a><i class="fa-brands fa-square-facebook"></i></a>
+        <a><i class="fa-brands fa-square-twitter"></i></a>
+        <a><i class="fa-brands fa-square-instagram"></i></a>
+        <a><i class="fa-brands fa-square-github"></i></a>
+    </div>
+    <div class="signup_sub_level">
+        <h2>Signup for your newseltter</h2>
+        <input type="text" placeholder="Enter email">
+        <button>Subscribe</button>
+    </div>
+    <div class="link_section">
+        <ul class="sub_link">
+            <li class="sub_parent_link">LINK_1</li>
+           <a href="#"><li class="sub_child_link">link0</li></a>
+           <a href="#"><li class="sub_child_link">link1</li></a>
+            <a href="#"><li class="sub_child_link">link2</li></a>
+        </ul>
+        <ul class="sub_link">
+            <li class="sub_parent_link">LINK_2</li>
+            <a href="#"><li class="sub_child_link">link0</li></a>
+            <a href="#"><li class="sub_child_link">link1</li></a>
+            <a href="#"><li class="sub_child_link">link2</li></a>
+        </ul>
+        <ul class="sub_link">
+            <li class="sub_parent_link">LINK_3</li>
+            <a href="#"><li class="sub_child_link">link0</li></a>
+            <a href="#"><li class="sub_child_link">link1</li></a>
+            <a href="#"><li class="sub_child_link">link2</li></a>
+        </ul>
+    </div>
+    <div id="Copy"></div>
+</footer>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var d = new Date();
+    var year = d.getFullYear();
+    document.getElementById("Copy").innerHTML = "© "+year + " All Rights Reserved";
+    </script>
+</body>
+</html>
